@@ -103,6 +103,10 @@ FlutterLockTask().clearDeviceOwnerApp().then((value) {
   print("clearDeviceOwnerApp: " + value.toString());
 });
 
+FlutterLockTask().openHomeSettings().then((value) {
+  print("openHomeSettings: " + value.toString());
+});
+
 FlutterLockTask().getPackageName().then((value) {
   print(value);
 });

@@ -23,24 +23,28 @@ abstract class FlutterLockTaskPlatform extends PlatformInterface {
     _instance = instance;
   }
 
-  Future<bool?> startLockTask() {
+  Future<bool> startLockTask() {
     throw UnimplementedError('startLockTask() has not been implemented.');
   }
 
-  Future<bool?> stopLockTask() {
+  Future<bool> stopLockTask() {
     throw UnimplementedError('stopLockTask() has not been implemented.');
   }
 
-  Future<bool?> isInLockTaskMode() {
+  Future<bool> isInLockTaskMode() {
     throw UnimplementedError('isInLockTaskMode() has not been implemented.');
   }
 
-  Future<bool?> setDeviceOwnerApp() {
+  Future<bool> setDeviceOwnerApp() {
     throw UnimplementedError('setDeviceOwnerApp() has not been implemented.');
   }
 
-  Future<bool?> clearDeviceOwnerApp() {
+  Future<bool> clearDeviceOwnerApp() {
     throw UnimplementedError('clearDeviceOwnerApp() has not been implemented.');
+  }
+
+  Future<bool> openHomeSettings() {
+    throw UnimplementedError('openHomeSettings() has not been implemented.');
   }
 
   Future<String?> getPackageName() {

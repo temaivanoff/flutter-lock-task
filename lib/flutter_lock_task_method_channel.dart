@@ -22,20 +22,26 @@ class MethodChannelFlutterLockTask extends FlutterLockTaskPlatform {
   }
 
   @override
-  Future<bool?> isInLockTaskMode() async {
+  Future<bool> isInLockTaskMode() async {
     final value = await methodChannel.invokeMethod<bool>('isInLockTaskMode') ?? false;
     return value;
   }
 
   @override
-  Future<bool?> setDeviceOwnerApp() async {
+  Future<bool> setDeviceOwnerApp() async {
     final value = await methodChannel.invokeMethod<bool>('setDeviceOwnerApp') ?? false;
     return value;
   }
 
   @override
-  Future<bool?> clearDeviceOwnerApp() async {
+  Future<bool> clearDeviceOwnerApp() async {
     final value = await methodChannel.invokeMethod<bool>('clearDeviceOwnerApp') ?? false;
+    return value;
+  }
+
+  @override
+  Future<bool> openHomeSettings() async {
+    final value = await methodChannel.invokeMethod<bool>('openHomeSettings') ?? false;
     return value;
   }
   

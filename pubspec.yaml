@@ -1,6 +1,6 @@
 name: flutter_lock_task
 description: Kiosk Mode for Device Lockdown.
-version: 0.0.1
+version: 0.0.2
 repository: https://github.com/temaivanoff/flutter-lock-task 
 homepage: https://github.com/temaivanoff/flutter-lock-task 
 

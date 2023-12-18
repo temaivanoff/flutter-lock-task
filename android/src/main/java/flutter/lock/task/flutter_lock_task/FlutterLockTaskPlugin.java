@@ -112,6 +112,18 @@ public class FlutterLockTaskPlugin implements FlutterPlugin, ActivityAware, Meth
       } catch (Exception e) {
         result.success(false);
       }
+    } else if (call.method.equals("openHomeSettings")) {
+      try {
+        if (mActivity != null) {
+          final Intent intent = new Intent(Settings.ACTION_HOME_SETTINGS);
+          mActivity.startActivity(intent);
+          result.success(true);
+        } else {
+          result.success(false);
+        }
+      } catch (Exception e) {
+        result.success(false);
+      }
     } else if (call.method.equals("getPackageName")) {
       result.success(mActivity.getPackageName());
     } else {

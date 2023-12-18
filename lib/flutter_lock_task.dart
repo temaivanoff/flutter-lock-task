@@ -2,20 +2,23 @@
 import 'flutter_lock_task_platform_interface.dart';
 
 class FlutterLockTask {
-  Future<bool?> startLockTask() {
+  Future<bool> startLockTask() {
     return FlutterLockTaskPlatform.instance.startLockTask();
   }
-  Future<bool?> stopLockTask() {
+  Future<bool> stopLockTask() {
     return FlutterLockTaskPlatform.instance.stopLockTask();
   }
-  Future<bool?> isInLockTaskMode() {
+  Future<bool> isInLockTaskMode() {
     return FlutterLockTaskPlatform.instance.isInLockTaskMode();
   }
-  Future<bool?> setDeviceOwnerApp() {
+  Future<bool> setDeviceOwnerApp() {
     return FlutterLockTaskPlatform.instance.setDeviceOwnerApp();
   }
-  Future<bool?> clearDeviceOwnerApp() {
+  Future<bool> clearDeviceOwnerApp() {
     return FlutterLockTaskPlatform.instance.clearDeviceOwnerApp();
+  }
+  Future<bool> openHomeSettings() {
+    return FlutterLockTaskPlatform.instance.openHomeSettings();
   }
   Future<String?> getPackageName() {
     return FlutterLockTaskPlatform.instance.getPackageName();

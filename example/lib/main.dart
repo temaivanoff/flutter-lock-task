@@ -64,6 +64,14 @@ class _MyAppState extends State<MyApp> {
               }
             ),
             ElevatedButton(
+              child: const Text('openHomeSettings'),
+              onPressed: () { 
+                FlutterLockTask().openHomeSettings().then((value) {
+                  print(value);
+                });
+              }
+            ),
+            ElevatedButton(
               child: const Text('getPackageName'),
               onPressed: () { 
                 FlutterLockTask().getPackageName().then((value) {
