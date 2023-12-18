@@ -93,7 +93,7 @@ public class FlutterLockTaskPlugin implements FlutterPlugin, ActivityAware, Meth
     } else if (call.method.equals("setDeviceOwnerApp")) {
       try {
         if (mActivity != null) {
-          Runtime.getRuntime().exec(new String[]{"su","-c", "dpm set-device-owner " + mActivity.getPackageName() + "/com.example.flutter_lock_task.DeviceAdmin"});
+          Runtime.getRuntime().exec(new String[]{"su","-c", "dpm set-device-owner " + mActivity.getPackageName() + "/flutter.lock.task.flutter_lock_task.DeviceAdmin"});
           result.success(true);
         } else {
           result.success(false);
