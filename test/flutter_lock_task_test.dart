@@ -9,7 +9,7 @@ class MockFlutterLockTaskPlatform
     implements FlutterLockTaskPlatform {
 
   @override
-  Future<String?> getPlatformVersion() => Future.value('42');
+  Future<String?> getPackageName() => Future.value('');
 }
 
 void main() {
@@ -24,6 +24,6 @@ void main() {
     MockFlutterLockTaskPlatform fakePlatform = MockFlutterLockTaskPlatform();
     FlutterLockTaskPlatform.instance = fakePlatform;
 
-    expect(await flutterLockTaskPlugin.getPlatformVersion(), '42');
+    expect(await flutterLockTaskPlugin.getPackageName(), '');
   });
 }
