@@ -2,7 +2,7 @@
 
 ## Getting started
 
-`$ flutter pub add flutter-lock-task`
+`$ flutter pub add flutter_lock_task`
 
 ### Settings
 
